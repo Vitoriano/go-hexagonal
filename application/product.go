@@ -11,7 +11,7 @@ func init() {
 	govalidator.SetFieldsRequiredByDefault(true)
 }
 
-func newProduct() *Product {
+func NewProduct() *Product {
 	product := Product{
 		ID:     uuid.NewV4().String(),
 		Status: DISABLED,
